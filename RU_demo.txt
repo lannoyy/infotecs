@@ -1,0 +1,27 @@
+451747	Zyabrikovo	Zyabrikovo		56.84665	34.7048	P	PPL	RU		77				0		204	Europe/Moscow	2011-07-09
+451748	Znamenka	Znamenka		56.74087	34.02323	P	PPL	RU		77				0		215	Europe/Moscow	2011-07-09
+451749	Zhukovo	Zhukovo		57.26429	34.20956	P	PPL	RU		77				0		237	Europe/Moscow	2011-07-09
+451750	Zhitovo	Zhitovo		57.29693	34.41848	P	PPL	RU		77				0		247	Europe/Moscow	2011-07-09
+451751	Zhitnikovo	Zhitnikovo		57.20064	34.57831	P	PPL	RU		77				0		198	Europe/Moscow	2011-07-09
+451752	Zhelezovo	Zhelezovo		57.02591	34.51886	P	PPL	RU		77				0		192	Europe/Moscow	2011-07-09
+451753	Zelëntsyno	Zelentsyno		56.73452	34.92011	P	PPL	RU		77				0		159	Europe/Moscow	2011-07-09
+451754	Zelënaya Niva	Zelenaya Niva		57.1711	34.76977	P	PPL	RU		77				0		160	Europe/Moscow	2011-07-09
+451755	Zasten’ye	Zasten'ye		57.27055	34.73	P	PPL	RU		77				0		184	Europe/Moscow	2011-07-09
+451756	Zarech’ye	Zarech'ye		56.68265	34.70984	P	PPL	RU		77				0		178	Europe/Moscow	2011-07-09
+451757	Zamush’ye	Zamush'ye		57.22984	34.77983	P	PPL	RU		77				0		182	Europe/Moscow	2011-07-09
+451758	Zaleden’ye	Zaleden'ye		57.12851	34.26788	P	PPLQ	RU		77				0		278	Europe/Moscow	2011-07-09
+451759	Urochishche Zakaznik	Urochishche Zakaznik		56.89212	34.56952	L	LCTY	RU		77				0		219	Europe/Moscow	2011-07-09
+451760	Zador’ye	Zador'ye		56.85239	34.49864	P	PPL	RU		77				0		224	Europe/Moscow	2011-07-09
+451761	Zabolot’ye	Zabolot'ye		56.74771	34.84792	P	PPL	RU		77				0		190	Europe/Moscow	2011-07-09
+451762	Yeskino	Yeskino		57.07916	34.78913	P	PPL	RU		77				0		189	Europe/Moscow	2011-07-09
+451763	Yereshkino	Yereshkino		57.22681	34.58422	P	PPL	RU		77				0		218	Europe/Moscow	2011-07-09
+451764	Yeremeyki	Yeremeyki		56.81639	34.92389	P	PPL	RU		77				0		160	Europe/Moscow	1998-05-01
+451765	Yelizavetino	Yelizavetino		56.7813	34.49321	P	PPL	RU		77				0		242	Europe/Moscow	2011-07-09
+451766	Urochishche Yegur’yevo	Urochishche Yegur'yevo		57.17701	34.47458	L	LCTY	RU		77				0		273	Europe/Moscow	2011-07-09
+451767	Yegor’ye	Yegor'ye		57.02174	34.29403	P	PPL	RU		77				0		268	Europe/Moscow	2011-07-09
+451768	Yefremovo	Yefremovo		57.06001	34.74787	P	PPL	RU		77				0		188	Europe/Moscow	2011-07-09
+451769	Yavidovo	Yavidovo	Javidovo,Yavidovo,Явидово	56.87068	34.51994	P	PPL	RU		77				0		217	Europe/Moscow	2012-01-16
+451770	Yasnaya Polyana	Yasnaya Polyana		56.93054	34.54696	P	PPL	RU		77				0		214	Europe/Moscow	2011-07-09
+451771	Yasnaya Polyana	Yasnaya Polyana		56.90599	34.97555	P	PPL	RU		77				0		185	Europe/Moscow	2011-07-09
+451772	Yakutino	Yakutino		56.99404	34.9857	P	PPL	RU		77				0		159	Europe/Moscow	2011-07-09
+451773	Yakshino	Yakshino		57.08518	34.60433	P	PPL	RU		77				0		188	Europe/Moscow	2011-07-09
