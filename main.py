@@ -29,7 +29,7 @@ async def cities_by_page(count_per_sheet: int, sheet: int):
 
 
 @app.get("/city/name/{name}")
-async def city_by_id(name: str, second_city: Optional[str] = None):
+async def city_by_name(name: str, second_city: Optional[str] = None):
     if second_city:
         city_1 = get_city_from_name(name, data)
         city_2 = get_city_from_name(second_city, data)
