@@ -110,8 +110,7 @@ $ python3 script.py
     
     Format:
     ```json
-    [
-        {
+    {
         "geonameid": "451756",
         "name": "Zarech’ye",
         "asciiname": "Zarech'ye",
@@ -132,7 +131,6 @@ $ python3 script.py
         "timezone": "Europe/Moscow",
         "modification_date": "2011-07-09\n"
     }
-    ]
     ```
     With status 200
 
