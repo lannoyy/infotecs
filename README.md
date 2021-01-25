@@ -1,21 +1,25 @@
-# Geoname REST API
+## Geoname REST API
 
-# 
+## Table of content
 
+1. [Installation dependencies](#installation)
+2. [Running](#launch)
+3. [API](#apies)
+4. [Credits](#credits)
 
-# Installation dependencies
+## Installation dependencies <a name="installation"></a>
 
 ```bash
 $ pip3 install -r requirements.txt
 ```
 
-# Running the app
+## Running the app <a name="launch"></a>
 
 ```bash
 $ python3 script.py
 ```
 
-# API
+## API <a name="apies"></a>
 
 1) 
     url - localhost:8000/city/geonameid/{geonameid}
@@ -206,7 +210,7 @@ $ python3 script.py
     with status 404
 
 
-# Credits
+## Credits <a name="credits"></a>
 
 - Author - Yury Ledovsky
 - [Telegram](https://t.me/lannoyy)
