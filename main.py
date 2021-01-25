@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException
-from work_with_data import get_data, get_city_from_geonameid, get_city_from_name, get_city_by_page, compare_two_cities, get_simular_cities_from_name
+from work_with_data import get_data, get_city_from_geonameid, \
+    get_city_from_name, get_city_by_page, compare_two_cities, \
+    get_simular_cities_from_name
 from typing import Optional
 
 app = FastAPI()
@@ -33,6 +35,9 @@ async def city_by_name(name: str, second_city: Optional[str] = None):
     if second_city:
         city_1 = get_city_from_name(name, data)
         city_2 = get_city_from_name(second_city, data)
+        if not city_1 or not city_2:
+            raise HTTPException(
+                status_code=404, detail="At least one item not found")
         output = compare_two_cities(city_1, city_2)
         if output:
             return output

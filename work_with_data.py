@@ -35,7 +35,7 @@ def get_data() -> dict:
             cc2, admin1_code, admin2_code, admin3_code, \
             admin4_code, population, elevation, dem, timezone, \
             modification_date = string.split('\t')
-            data[int(geonameid)] = ({'name': name, 'asciiname': asciiname, 'alternatenames': alternatenames, \
+            data[int(geonameid)] = ({'geonameid': geonameid, 'name': name, 'asciiname': asciiname, 'alternatenames': alternatenames, \
                 'latitude': latitude, 'longitude': longitude, 'feature_class': feature_class, 'feature_code': feature_code, \
                 'country_code': country_code, 'cc2': cc2, 'admin1_code': admin1_code, 'admin2_code': admin2_code, 'admin3_code': admin3_code, \
                     'admin4_code': admin4_code, 'population': population, 'elevation': elevation, 'dem': dem, 'timezone': timezone, \
@@ -54,9 +54,9 @@ def get_city_from_geonameid(geonameid:int, data:dict) -> dict:
 # @get_time
 def get_city_from_name(city:str, data:dict) -> dict:
     output = []
-    for element in data.values():
-        if city == element['name']:
-            output.append(element)
+    for value in data.values():
+        if city == value['name']:
+            output.append(value)
     if len(output) > 1:
         output = sort_by_population(output)
     if output:
@@ -79,9 +79,9 @@ def get_city_by_page(data:dict, sheet:int, count_per_sheet:int):
 # @get_time
 def get_simular_cities_from_name(city:str, data:dict) -> dict:
     output = []
-    for element in data.values():
-        if city in element['name']:
-            output.append(element)
+    for value in data.values():
+        if city in value['name']:
+            output.append(value)
     return output
 
 
