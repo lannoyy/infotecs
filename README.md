@@ -164,7 +164,7 @@ $ python3 script.py
 
     ```json
     {
-        "northern": {nothern city}
+        "northern": "same"
         "timezone": true 
     }
     ```
