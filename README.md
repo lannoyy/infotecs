@@ -1,8 +1,5 @@
 # Geoname REST API
 
-## Description
-
-
 ## Installation dependencies
 
 ```bash
