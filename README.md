@@ -150,10 +150,22 @@ $ python3 script.py
 
     If second city selected:
 
+
+    If one from cities are nothern:
+
     ```json
     {
-        "northern": {nothern city} # or "same"
-        "timezone": true # or false
+        "northern": {nothern city}
+        "timezone": true 
+    }
+    ```
+    
+    Else:
+
+    ```json
+    {
+        "northern": {nothern city}
+        "timezone": true 
     }
     ```
 
