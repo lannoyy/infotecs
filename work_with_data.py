@@ -1,10 +1,10 @@
 from time import time
 
 
-def get_time(function_to_decorate):
+def get_time(function):
     def wrapper(*args):
         t1 = time()
-        func = function_to_decorate(*args)  # Сама функция
+        func = function(*args)
         t2 = time()
         print(t2-t1)
         return func
@@ -23,15 +23,28 @@ class DataReader():
                     cc2, admin1_code, admin2_code, admin3_code, \
                     admin4_code, population, elevation, dem, timezone, \
                     modification_date = string.split('\t')
-                self.data[int(geonameid)] = ({'geonameid': geonameid, 'name': name, 'asciiname': asciiname,
-                                              'alternatenames': alternatenames,
-                                              'latitude': latitude, 'longitude': longitude,
-                                              'feature_class': feature_class, 'feature_code': feature_code,
-                                              'country_code': country_code, 'cc2': cc2, 'admin1_code': admin1_code,
-                                              'admin2_code': admin2_code, 'admin3_code': admin3_code,
-                                              'admin4_code': admin4_code, 'population': population,
-                                              'elevation': elevation, 'dem': dem, 'timezone': timezone,
-                                              'modification_date': modification_date})
+                self.data[int(geonameid)] = (
+                    {'geonameid': geonameid,
+                     'name': name,
+                     'asciiname': asciiname,
+                     'alternatenames': alternatenames,
+                     'latitude': latitude,
+                     'longitude': longitude,
+                     'feature_class': feature_class,
+                     'feature_code': feature_code,
+                     'country_code': country_code,
+                     'cc2': cc2,
+                     'admin1_code': admin1_code,
+                     'admin2_code': admin2_code,
+                     'admin3_code': admin3_code,
+                     'admin4_code': admin4_code,
+                     'population': population,
+                     'elevation': elevation,
+                     'dem': dem,
+                     'timezone': timezone,
+                     'modification_date': modification_date
+                     }
+                )
 
     def sort_by_population(self, data: dict) -> dict:
         output = []
@@ -65,12 +78,14 @@ class DataReader():
     def get_city_by_page(self, sheet: int, count_per_sheet: int) -> list:
         array = list(self.data.values())
         try:
-            return array[(count_per_sheet * sheet):((sheet + 1) * count_per_sheet)]
+            return array[(count_per_sheet * sheet):
+                         ((sheet + 1) * count_per_sheet)]
         except IndexError:
             if len(array) < count_per_sheet * sheet:
                 return None
             else:
-                return array[(count_per_sheet * sheet):((sheet + 1) * count_per_sheet)]
+                return array[(count_per_sheet * sheet):
+                             ((sheet + 1) * count_per_sheet)]
 
     def get_simular_cities_from_name(self, city: str) -> dict:
         output = []
@@ -90,5 +105,5 @@ class DataReader():
         if city_1['timezone'] == city_2['timezone']:
             output['timezone'] = True
         else:
-            output['northern'] = False
+            output['timezone'] = False
         return output
